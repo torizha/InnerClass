@@ -1,0 +1,27 @@
+package com.staticVariable;
+
+public class StaticInnnerClass {
+
+	public static void main(String[] args) throws Exception {
+		// TODO Auto-generated method stub
+		OutRegularClass oc=new OutRegularClass();
+		OutRegularClass.InClass ic=new OutRegularClass.InClass();
+		ic.show();
+		
+	}
+
+	
+}
+class OutRegularClass{
+	private static int score=88;
+
+	public static class InClass{
+		int score=99;
+		public void show()
+		{
+			System.out.println("OutRegularClass score: "+OutRegularClass.score);
+			System.out.println("InStaticClass score: "+this.score);
+		}
+	}
+}
+			

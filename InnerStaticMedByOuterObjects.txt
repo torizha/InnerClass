@@ -1,0 +1,31 @@
+/*
+ * static()can use static members and static ways directly. is static void has to 
+ * create objects to use regular()
+ * regular() can use static members and ways, as well as regular members and ways
+ */
+package com.staticVariable;
+
+public class PublicStatic {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		HelloWorld hello=new HelloWorld();
+		hello.show();//regular way
+		HelloWorld.print();//static way
+	
+		}
+}
+class HelloWorld
+{
+		public static void print()
+		{
+			System.out.println("welcome to static world");
+		}
+		
+		public void show()
+		{
+			System.out.println("welcome to regular world");
+		}
+			
+		}
+			

@@ -1,0 +1,23 @@
+/*
+ * create outer class object to run inner class show()
+ */
+
+package com.staticVariable;
+public class InnerClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		OutterClass oc=new OutterClass();
+		oc.new InnerClass().show();
+	}
+
+	
+	}
+
+class OutterClass{
+	public class InnerClass{
+		public void show() {
+			System.out.println("welcome to inner class");
+		}
+	}
+}

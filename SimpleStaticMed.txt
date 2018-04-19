@@ -1,0 +1,22 @@
+package com.staticVariable;
+
+public class StaticScore {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int allScore=HelloScore.sum();
+		System.out.println("total score: "+allScore);
+	}
+
+}
+
+class HelloScore{
+	static int score1=90;
+	static int score2=88;
+	public static int sum() {
+		int sum = 0;
+		sum=score1+score2;
+		return sum;
+		
+	}
+}			
